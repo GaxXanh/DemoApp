@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		320397141E2DF94B00039F22 /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320397131E2DF94B00039F22 /* DemoAppTests.swift */; };
+		3221A26F1E2E44C30086F015 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221A26E1E2E44C30086F015 /* SignUpViewController.swift */; };
 		324E363B1E2CD8F1007918E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E363A1E2CD8F1007918E8 /* AppDelegate.swift */; };
 		324E363D1E2CD8F1007918E8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E363C1E2CD8F1007918E8 /* AccountViewController.swift */; };
 		324E36401E2CD8F1007918E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324E363E1E2CD8F1007918E8 /* Main.storyboard */; };
 		324E36421E2CD8F1007918E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324E36411E2CD8F1007918E8 /* Assets.xcassets */; };
 		324E36451E2CD8F1007918E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324E36431E2CD8F1007918E8 /* LaunchScreen.storyboard */; };
+		328203FE1E2DFDA4003A3D5D /* MyFirstEarlGreyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328203FD1E2DFDA4003A3D5D /* MyFirstEarlGreyTest.swift */; };
 		32F2C9D71E2DC81F00E217FA /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F2C9D61E2DC81F00E217FA /* PasswordViewController.swift */; };
+		80CD604CE57BA3A3725EE918 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = 764C2498CCB06A75D99B499E /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AD161816A5EFAAC0A95C5CB7 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FAE4BD471DFE94ADAF31E /* EarlGrey.swift */; };
+		C150DBE0377ED835DA139259 /* Pods_DemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4679C61E4A7306C2AA1E775E /* Pods_DemoAppTests.framework */; };
+		FD2576A28B1DE2BE0AA264BB /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764C2498CCB06A75D99B499E /* EarlGrey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,10 +31,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8AFB6C3B5EE752590EE5D7B4 /* EarlGrey Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TEST_HOST)/../";
+			dstSubfolderSpec = 0;
+			files = (
+				80CD604CE57BA3A3725EE918 /* EarlGrey.framework in EarlGrey Copy Files */,
+			);
+			name = "EarlGrey Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A13D47D786074F9F8E3C926 /* Pods-DemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		320397111E2DF94B00039F22 /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		320397131E2DF94B00039F22 /* DemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppTests.swift; sourceTree = "<group>"; };
 		320397151E2DF94B00039F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3221A26E1E2E44C30086F015 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		324E36371E2CD8F1007918E8 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324E363A1E2CD8F1007918E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		324E363C1E2CD8F1007918E8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +57,12 @@
 		324E36411E2CD8F1007918E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324E36441E2CD8F1007918E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		324E36461E2CD8F1007918E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328203FD1E2DFDA4003A3D5D /* MyFirstEarlGreyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFirstEarlGreyTest.swift; path = ../MyFirstEarlGreyTest.swift; sourceTree = "<group>"; };
 		32F2C9D61E2DC81F00E217FA /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		4679C61E4A7306C2AA1E775E /* Pods_DemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B961683CA759C1DE736FC47 /* Pods-DemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		764C2498CCB06A75D99B499E /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = "${SRCROOT}/Pods/EarlGrey/EarlGrey/EarlGrey.framework"; sourceTree = SRCROOT; };
+		C24FAE4BD471DFE94ADAF31E /* EarlGrey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C150DBE0377ED835DA139259 /* Pods_DemoAppTests.framework in Frameworks */,
+				FD2576A28B1DE2BE0AA264BB /* EarlGrey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +88,9 @@
 		320397121E2DF94B00039F22 /* DemoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				320397131E2DF94B00039F22 /* DemoAppTests.swift */,
+				328203FD1E2DFDA4003A3D5D /* MyFirstEarlGreyTest.swift */,
 				320397151E2DF94B00039F22 /* Info.plist */,
+				C24FAE4BD471DFE94ADAF31E /* EarlGrey.swift */,
 			);
 			path = DemoAppTests;
 			sourceTree = "<group>";
@@ -73,6 +101,8 @@
 				324E36391E2CD8F1007918E8 /* DemoApp */,
 				320397121E2DF94B00039F22 /* DemoAppTests */,
 				324E36381E2CD8F1007918E8 /* Products */,
+				C710DDB9FA5C28B2770DD83E /* Pods */,
+				95F0C1565A72470E78C959A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +111,7 @@
 			children = (
 				324E36371E2CD8F1007918E8 /* DemoApp.app */,
 				320397111E2DF94B00039F22 /* DemoAppTests.xctest */,
+				764C2498CCB06A75D99B499E /* EarlGrey.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,12 +122,30 @@
 				324E363A1E2CD8F1007918E8 /* AppDelegate.swift */,
 				324E363C1E2CD8F1007918E8 /* AccountViewController.swift */,
 				32F2C9D61E2DC81F00E217FA /* PasswordViewController.swift */,
+				3221A26E1E2E44C30086F015 /* SignUpViewController.swift */,
 				324E363E1E2CD8F1007918E8 /* Main.storyboard */,
 				324E36411E2CD8F1007918E8 /* Assets.xcassets */,
 				324E36431E2CD8F1007918E8 /* LaunchScreen.storyboard */,
 				324E36461E2CD8F1007918E8 /* Info.plist */,
 			);
 			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		95F0C1565A72470E78C959A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4679C61E4A7306C2AA1E775E /* Pods_DemoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C710DDB9FA5C28B2770DD83E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B961683CA759C1DE736FC47 /* Pods-DemoAppTests.debug.xcconfig */,
+				2A13D47D786074F9F8E3C926 /* Pods-DemoAppTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +155,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3203971A1E2DF94B00039F22 /* Build configuration list for PBXNativeTarget "DemoAppTests" */;
 			buildPhases = (
+				327A8E6244459198A824F3C0 /* [CP] Check Pods Manifest.lock */,
 				3203970D1E2DF94B00039F22 /* Sources */,
 				3203970E1E2DF94B00039F22 /* Frameworks */,
 				3203970F1E2DF94B00039F22 /* Resources */,
+				9370268651D8B4DF7BDA8D01 /* [CP] Embed Pods Frameworks */,
+				882DDBD2A075D194FBDC1675 /* [CP] Copy Pods Resources */,
+				8AFB6C3B5EE752590EE5D7B4 /* EarlGrey Copy Files */,
 			);
 			buildRules = (
 			);
@@ -199,12 +252,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		327A8E6244459198A824F3C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		882DDBD2A075D194FBDC1675 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9370268651D8B4DF7BDA8D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3203970D1E2DF94B00039F22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320397141E2DF94B00039F22 /* DemoAppTests.swift in Sources */,
+				328203FE1E2DFDA4003A3D5D /* MyFirstEarlGreyTest.swift in Sources */,
+				AD161816A5EFAAC0A95C5CB7 /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +316,7 @@
 			files = (
 				324E363D1E2CD8F1007918E8 /* AccountViewController.swift in Sources */,
 				324E363B1E2CD8F1007918E8 /* AppDelegate.swift in Sources */,
+				3221A26F1E2E44C30086F015 /* SignUpViewController.swift in Sources */,
 				32F2C9D71E2DC81F00E217FA /* PasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +353,7 @@
 /* Begin XCBuildConfiguration section */
 		320397181E2DF94B00039F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B961683CA759C1DE736FC47 /* Pods-DemoAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HKXZTH4YA3;
@@ -264,6 +368,7 @@
 		};
 		320397191E2DF94B00039F22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A13D47D786074F9F8E3C926 /* Pods-DemoAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HKXZTH4YA3;
@@ -405,6 +510,7 @@
 				320397191E2DF94B00039F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		324E36321E2CD8F1007918E8 /* Build configuration list for PBXProject "DemoApp" */ = {
 			isa = XCConfigurationList;
