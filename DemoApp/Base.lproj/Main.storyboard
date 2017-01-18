@@ -24,13 +24,14 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3f-o9-QB9">
                                 <rect key="frame" x="56" y="279" width="263" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="tfAccountID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tfAccountID" label="tfAccountLbl"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox4-lp-FgK">
                                 <rect key="frame" x="171" y="339" width="32" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnNextID" label="btnNextLbl"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="validateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKi-Wm-vlb"/>
@@ -38,7 +39,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yib-0g-HoA">
                                 <rect key="frame" x="134" y="399" width="107" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="btnCreateAccountID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnCreateAccountID" label="btnCreateAccountLbl"/>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
                                     <action selector="createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tXl-sx-Z16"/>
@@ -46,7 +47,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUu-OA-I8s">
                                 <rect key="frame" x="161.5" y="228" width="52" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="lblSignInID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lblSignInID" label="lblSignInLbl"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -90,7 +91,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0B-aZ-vda">
                                 <rect key="frame" x="179" y="235" width="160" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="tfUserNameID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tfUserNameID" label="tfUserNameLbl"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bes-Z1-S5X"/>
                                     <constraint firstAttribute="width" constant="160" id="bgw-6m-WBp"/>
@@ -101,7 +102,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3W-31-3ZN">
                                 <rect key="frame" x="179" y="295" width="160" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="tfPasswordID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tfPasswordID" label="tfPasswordLbl"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="MG2-bc-Eqe"/>
                                 </constraints>
@@ -117,14 +118,14 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tib-Fr-7tc">
                                 <rect key="frame" x="128" y="184" width="119" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="lblCreateAccountID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lblCreateAccountID" label="lblCreateAccountLbl"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IC-Q0-W6w">
                                 <rect key="frame" x="160" y="356" width="55" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="btnSignUp"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnSignUpID" label="btnSignUpLbl"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUp:" destination="PeM-5k-0fM" eventType="touchUpInside" id="u8B-l8-Kfd"/>
@@ -202,21 +203,21 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl3-TL-d1Z">
                                 <rect key="frame" x="128" y="184" width="119" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="lblEnterPasswordID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lblEnterPasswordID" label="lblEnterPasswordLbl"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lgg-qt-p3R">
                                 <rect key="frame" x="56" y="235" width="263" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="tfPassword2ID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tfPassword2ID" label="tfPassword2Lbl"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiP-Td-zkY">
                                 <rect key="frame" x="164" y="295" width="47" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="btnSignInID"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnSignInID" label="btnSignInLbl"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <segue destination="xCI-n8-C0H" kind="presentation" id="ReW-fI-wRh"/>
@@ -245,7 +246,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3KJ-Zf-I96" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nsm-q1-vbx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nsm-q1-vbx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

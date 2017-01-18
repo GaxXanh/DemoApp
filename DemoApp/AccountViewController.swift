@@ -17,7 +17,6 @@ class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.accessibilityIdentifier = "btnNextID"
     }
     
     override func viewWillAppear(_ animated: Bool) {

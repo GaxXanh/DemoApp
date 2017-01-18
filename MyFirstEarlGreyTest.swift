@@ -23,6 +23,7 @@ class MyFirstEarlGreyTest: XCTestCase {
     let tfUserName: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfUserNameID"))
     let tfPassword: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfPasswordID"))
     let lblCreateAccount: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblCreateAccountID"))
+    let btnSignUp: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnSignUpID"))
     
     // PasswordViewController
     let btnSignIn: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnSignInID"))
@@ -49,7 +50,7 @@ class MyFirstEarlGreyTest: XCTestCase {
         lblCreateAccount.perform(grey_tap())
         tfPassword.perform(grey_typeText("1234567890")).assert(with: grey_text("1234567890"))
         lblCreateAccount.perform(grey_tap())
-        btnBackPasswordVC.perform(grey_tap())
+        btnSignUp.perform(grey_tap()).assert(with: grey_notVisible())
         
         // Enter account
         tfAccount.perform(grey_typeText("anhph5")).assert(with: grey_text("anhph5"))

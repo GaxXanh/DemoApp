@@ -14,10 +14,20 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>KIFDemoAppTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>320397101E2DF94B00039F22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>321A1D811E2F0F6B00F87225</key>
 		<dict>
 			<key>primary</key>
 			<true/>

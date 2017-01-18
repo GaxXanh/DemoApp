@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321A1D851E2F0F6B00F87225 /* KIFDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A1D841E2F0F6B00F87225 /* KIFDemoAppTests.swift */; };
+		321A1DB11E2F16C900F87225 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 321A1D971E2F0FAB00F87225 /* libKIF.a */; };
+		321A1DB31E2F191500F87225 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321A1DB21E2F191500F87225 /* IOKit.framework */; };
 		3221A26F1E2E44C30086F015 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221A26E1E2E44C30086F015 /* SignUpViewController.swift */; };
 		324E363B1E2CD8F1007918E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E363A1E2CD8F1007918E8 /* AppDelegate.swift */; };
 		324E363D1E2CD8F1007918E8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324E363C1E2CD8F1007918E8 /* AccountViewController.swift */; };
@@ -29,6 +32,55 @@
 			remoteGlobalIDString = 324E36361E2CD8F1007918E8;
 			remoteInfo = DemoApp;
 		};
+		321A1D871E2F0F6B00F87225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324E362F1E2CD8F1007918E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324E36361E2CD8F1007918E8;
+			remoteInfo = DemoApp;
+		};
+		321A1D961E2F0FAB00F87225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EABD46AA1857A0C700A5F081;
+			remoteInfo = KIF;
+		};
+		321A1D981E2F0FAB00F87225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB60ECC1177F8C83005A041A;
+			remoteInfo = "Test Host";
+		};
+		321A1D9A1E2F0FAB00F87225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EABD46CD1857A0F300A5F081;
+			remoteInfo = "KIF Tests";
+		};
+		321A1D9C1E2F0FAB00F87225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CC9673B1AD4B1B600576D13;
+			remoteInfo = KIFFramework;
+		};
+		321A1D9E1E2F0FAB00F87225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FAB89FFC1CAC546900C6DFC1;
+			remoteInfo = KIFFrameworkConsumer;
+		};
+		321A1DA01E2F0FAB00F87225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FAB8A0141CAC546A00C6DFC1;
+			remoteInfo = KIFFrameworkConsumerTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +101,12 @@
 		2A13D47D786074F9F8E3C926 /* Pods-DemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		320397111E2DF94B00039F22 /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		320397151E2DF94B00039F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321A1D821E2F0F6B00F87225 /* KIFDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		321A1D841E2F0F6B00F87225 /* KIFDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFDemoAppTests.swift; sourceTree = "<group>"; };
+		321A1D861E2F0F6B00F87225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = Frameworks/KIF/KIF.xcodeproj; sourceTree = SOURCE_ROOT; };
+		321A1DA21E2F0FFC00F87225 /* KIFDemoAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIFDemoAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		321A1DB21E2F191500F87225 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		3221A26E1E2E44C30086F015 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		324E36371E2CD8F1007918E8 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324E363A1E2CD8F1007918E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +133,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		321A1D7F1E2F0F6B00F87225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321A1DB11E2F16C900F87225 /* libKIF.a in Frameworks */,
+				321A1DB31E2F191500F87225 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		324E36341E2CD8F1007918E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,11 +162,36 @@
 			path = DemoAppTests;
 			sourceTree = "<group>";
 		};
+		321A1D831E2F0F6B00F87225 /* KIFDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */,
+				321A1D841E2F0F6B00F87225 /* KIFDemoAppTests.swift */,
+				321A1D861E2F0F6B00F87225 /* Info.plist */,
+				321A1DA21E2F0FFC00F87225 /* KIFDemoAppTests-Bridging-Header.h */,
+			);
+			path = KIFDemoAppTests;
+			sourceTree = "<group>";
+		};
+		321A1D8D1E2F0FAB00F87225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				321A1D971E2F0FAB00F87225 /* libKIF.a */,
+				321A1D991E2F0FAB00F87225 /* Test Host.app */,
+				321A1D9B1E2F0FAB00F87225 /* KIF Tests - XCTest.xctest */,
+				321A1D9D1E2F0FAB00F87225 /* KIF.framework */,
+				321A1D9F1E2F0FAB00F87225 /* KIFFrameworkConsumer.app */,
+				321A1DA11E2F0FAB00F87225 /* KIFFrameworkConsumerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		324E362E1E2CD8F1007918E8 = {
 			isa = PBXGroup;
 			children = (
 				324E36391E2CD8F1007918E8 /* DemoApp */,
 				320397121E2DF94B00039F22 /* DemoAppTests */,
+				321A1D831E2F0F6B00F87225 /* KIFDemoAppTests */,
 				324E36381E2CD8F1007918E8 /* Products */,
 				C710DDB9FA5C28B2770DD83E /* Pods */,
 				95F0C1565A72470E78C959A3 /* Frameworks */,
@@ -112,6 +204,7 @@
 				324E36371E2CD8F1007918E8 /* DemoApp.app */,
 				320397111E2DF94B00039F22 /* DemoAppTests.xctest */,
 				764C2498CCB06A75D99B499E /* EarlGrey.framework */,
+				321A1D821E2F0F6B00F87225 /* KIFDemoAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +227,7 @@
 		95F0C1565A72470E78C959A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				321A1DB21E2F191500F87225 /* IOKit.framework */,
 				4679C61E4A7306C2AA1E775E /* Pods_DemoAppTests.framework */,
 			);
 			name = Frameworks;
@@ -173,6 +267,24 @@
 			productReference = 320397111E2DF94B00039F22 /* DemoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		321A1D811E2F0F6B00F87225 /* KIFDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 321A1D8B1E2F0F6B00F87225 /* Build configuration list for PBXNativeTarget "KIFDemoAppTests" */;
+			buildPhases = (
+				321A1D7E1E2F0F6B00F87225 /* Sources */,
+				321A1D7F1E2F0F6B00F87225 /* Frameworks */,
+				321A1D801E2F0F6B00F87225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				321A1D881E2F0F6B00F87225 /* PBXTargetDependency */,
+			);
+			name = KIFDemoAppTests;
+			productName = KIFDemoAppTests;
+			productReference = 321A1D821E2F0F6B00F87225 /* KIFDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		324E36361E2CD8F1007918E8 /* DemoApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 324E36491E2CD8F1007918E8 /* Build configuration list for PBXNativeTarget "DemoApp" */;
@@ -206,9 +318,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 324E36361E2CD8F1007918E8;
 					};
-					324E36361E2CD8F1007918E8 = {
+					321A1D811E2F0F6B00F87225 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = HKXZTH4YA3;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 324E36361E2CD8F1007918E8;
+					};
+					324E36361E2CD8F1007918E8 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 4ZRTWNT9RX;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -224,16 +343,75 @@
 			mainGroup = 324E362E1E2CD8F1007918E8;
 			productRefGroup = 324E36381E2CD8F1007918E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 321A1D8D1E2F0FAB00F87225 /* Products */;
+					ProjectRef = 321A1D8C1E2F0FAB00F87225 /* KIF.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				324E36361E2CD8F1007918E8 /* DemoApp */,
 				320397101E2DF94B00039F22 /* DemoAppTests */,
+				321A1D811E2F0F6B00F87225 /* KIFDemoAppTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		321A1D971E2F0FAB00F87225 /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = 321A1D961E2F0FAB00F87225 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		321A1D991E2F0FAB00F87225 /* Test Host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Test Host.app";
+			remoteRef = 321A1D981E2F0FAB00F87225 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		321A1D9B1E2F0FAB00F87225 /* KIF Tests - XCTest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KIF Tests - XCTest.xctest";
+			remoteRef = 321A1D9A1E2F0FAB00F87225 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		321A1D9D1E2F0FAB00F87225 /* KIF.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KIF.framework;
+			remoteRef = 321A1D9C1E2F0FAB00F87225 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		321A1D9F1E2F0FAB00F87225 /* KIFFrameworkConsumer.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = KIFFrameworkConsumer.app;
+			remoteRef = 321A1D9E1E2F0FAB00F87225 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		321A1DA11E2F0FAB00F87225 /* KIFFrameworkConsumerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KIFFrameworkConsumerTests.xctest;
+			remoteRef = 321A1DA01E2F0FAB00F87225 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		3203970F1E2DF94B00039F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		321A1D801E2F0F6B00F87225 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,6 +488,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		321A1D7E1E2F0F6B00F87225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321A1D851E2F0F6B00F87225 /* KIFDemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		324E36331E2CD8F1007918E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +514,11 @@
 			isa = PBXTargetDependency;
 			target = 324E36361E2CD8F1007918E8 /* DemoApp */;
 			targetProxy = 320397161E2DF94B00039F22 /* PBXContainerItemProxy */;
+		};
+		321A1D881E2F0F6B00F87225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324E36361E2CD8F1007918E8 /* DemoApp */;
+			targetProxy = 321A1D871E2F0F6B00F87225 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -376,6 +567,51 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaxxanh.DemoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+			};
+			name = Release;
+		};
+		321A1D891E2F0F6B00F87225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HKXZTH4YA3;
+				INFOPLIST_FILE = KIFDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaxxanh.KIFDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KIFDemoAppTests/KIFDemoAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+			};
+			name = Debug;
+		};
+		321A1D8A1E2F0F6B00F87225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HKXZTH4YA3;
+				INFOPLIST_FILE = KIFDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaxxanh.KIFDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KIFDemoAppTests/KIFDemoAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
 			};
@@ -478,10 +714,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HKXZTH4YA3;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4ZRTWNT9RX;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaxxanh.DemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovatube.uitestdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -491,10 +728,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HKXZTH4YA3;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4ZRTWNT9RX;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaxxanh.DemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovatube.uitestdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -508,6 +746,15 @@
 			buildConfigurations = (
 				320397181E2DF94B00039F22 /* Debug */,
 				320397191E2DF94B00039F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		321A1D8B1E2F0F6B00F87225 /* Build configuration list for PBXNativeTarget "KIFDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				321A1D891E2F0F6B00F87225 /* Debug */,
+				321A1D8A1E2F0F6B00F87225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
