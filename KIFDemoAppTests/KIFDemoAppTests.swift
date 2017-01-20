@@ -40,22 +40,22 @@ class KIFDemoAppTests: KIFTestCase {
     let btnSignIn = "btnSignInLbl"
     
     func testCreateAccount() {
+        
         // Create account
         tester().tapView(withAccessibilityLabel: btnCreateAccount)
-        tester().enterText("anhph5", intoViewWithAccessibilityLabel: tfUserName)
-        XCTAssert((tester().waitForView(withAccessibilityLabel: tfUserName) as! UITextField).text == "anhph5", "")
-        tester().enterText("1234567890", intoViewWithAccessibilityLabel: tfPassword)
-        XCTAssert((tester().waitForView(withAccessibilityLabel: tfPassword) as! UITextField).text == "1234567890", "")
+        tester().enterText("chihuahua", intoViewWithAccessibilityLabel: tfUserName)
+        XCTAssert((tester().waitForView(withAccessibilityLabel: tfUserName) as! UITextField).text == "chihuahua", "")
+        tester().enterText("gaogaogao", intoViewWithAccessibilityLabel: tfPassword)
+        XCTAssert((tester().waitForView(withAccessibilityLabel: tfPassword) as! UITextField).text == "gaogaogao", "")
         tester().tapView(withAccessibilityLabel: btnSignUp)
         
         // Enter account
-        tester().enterText("anhph5", intoViewWithAccessibilityLabel: tfAccount)
-        XCTAssert((tester().waitForView(withAccessibilityLabel: tfAccount) as! UITextField).text == "anhph5", "")
+        tester().enterText("chihuahua", intoViewWithAccessibilityLabel: "tfAccountLbl")
         tester().tapView(withAccessibilityLabel: btnNext)
         
         // Enter password
-        tester().enterText("1234567890", intoViewWithAccessibilityLabel: tfPassword2)
-        XCTAssert((tester().waitForView(withAccessibilityLabel: tfPassword2) as! UITextField).text == "1234567890", "")
+        tester().enterText("gaogaogao", intoViewWithAccessibilityLabel: tfPassword2)
+        XCTAssert((tester().waitForView(withAccessibilityLabel: tfPassword2) as! UITextField).text == "gaogaogao", "")
         tester().tapView(withAccessibilityLabel: btnSignIn)
         
     }

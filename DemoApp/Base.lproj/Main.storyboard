@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3KJ-Zf-I96">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,18 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3f-o9-QB9">
-                                <rect key="frame" x="56" y="279" width="263" height="30"/>
+                                <rect key="frame" x="60" y="279" width="294" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="tfAccountID" label="tfAccountLbl"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox4-lp-FgK">
-                                <rect key="frame" x="171" y="339" width="32" height="30"/>
+                                <rect key="frame" x="191" y="339" width="32" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="btnNextID" label="btnNextLbl"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yib-0g-HoA">
-                                <rect key="frame" x="134" y="399" width="107" height="30"/>
+                                <rect key="frame" x="153.66666666666669" y="399" width="107.00000000000006" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="btnCreateAccountID" label="btnCreateAccountLbl"/>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUu-OA-I8s">
-                                <rect key="frame" x="161.5" y="228" width="52" height="21"/>
+                                <rect key="frame" x="181" y="228" width="52" height="21"/>
                                 <accessibility key="accessibilityConfiguration" identifier="lblSignInID" label="lblSignInLbl"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -86,12 +86,12 @@
                         <viewControllerLayoutGuide type="bottom" id="RdF-N9-R3l"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kq2-1B-CZK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0B-aZ-vda">
-                                <rect key="frame" x="179" y="235" width="160" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="tfUserNameID" label="tfUserNameLbl"/>
+                                <rect key="frame" x="214" y="235" width="160" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tfUserNameSignUpID" label="tfUserNameLbl"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bes-Z1-S5X"/>
                                     <constraint firstAttribute="width" constant="160" id="bgw-6m-WBp"/>
@@ -101,30 +101,30 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3W-31-3ZN">
-                                <rect key="frame" x="179" y="295" width="160" height="30"/>
+                                <rect key="frame" x="214" y="295" width="160" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="tfPasswordID" label="tfPasswordLbl"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="MG2-bc-Eqe"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Z6-f0-bWh">
-                                <rect key="frame" x="97" y="295" width="74" height="21"/>
+                                <rect key="frame" x="100" y="295" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tib-Fr-7tc">
-                                <rect key="frame" x="128" y="184" width="119" height="21"/>
+                                <rect key="frame" x="147.66666666666669" y="184" width="119.00000000000006" height="21"/>
                                 <accessibility key="accessibilityConfiguration" identifier="lblCreateAccountID" label="lblCreateAccountLbl"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IC-Q0-W6w">
-                                <rect key="frame" x="160" y="356" width="55" height="30"/>
+                                <rect key="frame" x="179.66666666666666" y="356" width="55" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="btnSignUpID" label="btnSignUpLbl"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
@@ -132,7 +132,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsr-Ny-LJ6">
-                                <rect key="frame" x="92" y="235" width="79" height="21"/>
+                                <rect key="frame" x="95" y="235" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -142,8 +142,8 @@
                         <constraints>
                             <constraint firstItem="nsr-Ny-LJ6" firstAttribute="top" secondItem="r0B-aZ-vda" secondAttribute="top" id="1qb-M7-x0G"/>
                             <constraint firstItem="Tib-Fr-7tc" firstAttribute="top" secondItem="fUH-5R-xxV" secondAttribute="bottom" constant="164" id="85d-la-niA"/>
-                            <constraint firstItem="r0B-aZ-vda" firstAttribute="leading" secondItem="nsr-Ny-LJ6" secondAttribute="trailing" constant="8" id="9D6-ru-3Jz"/>
-                            <constraint firstItem="f3W-31-3ZN" firstAttribute="leading" secondItem="3Z6-f0-bWh" secondAttribute="trailing" constant="8" id="Jp3-Nj-80l"/>
+                            <constraint firstItem="r0B-aZ-vda" firstAttribute="leading" secondItem="nsr-Ny-LJ6" secondAttribute="trailing" constant="40" id="9D6-ru-3Jz"/>
+                            <constraint firstItem="f3W-31-3ZN" firstAttribute="leading" secondItem="3Z6-f0-bWh" secondAttribute="trailing" constant="40" id="Jp3-Nj-80l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="r0B-aZ-vda" secondAttribute="trailing" constant="20" id="M93-m5-0EH"/>
                             <constraint firstItem="9IC-Q0-W6w" firstAttribute="top" secondItem="f3W-31-3ZN" secondAttribute="bottom" constant="31" id="SOA-PD-ON9"/>
                             <constraint firstItem="3Z6-f0-bWh" firstAttribute="top" secondItem="f3W-31-3ZN" secondAttribute="top" id="VcV-fb-ovq"/>
@@ -168,11 +168,11 @@
                         <viewControllerLayoutGuide type="bottom" id="3L8-1D-Vqa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nR8-XI-tG5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51E-Yh-tZA">
-                                <rect key="frame" x="152" y="323.5" width="71" height="21"/>
+                                <rect key="frame" x="171.66666666666666" y="357.66666666666669" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -198,25 +198,25 @@
                         <viewControllerLayoutGuide type="bottom" id="HbA-Dr-aYq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HEh-jn-Lcr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl3-TL-d1Z">
-                                <rect key="frame" x="128" y="184" width="119" height="21"/>
+                                <rect key="frame" x="147.66666666666669" y="184" width="119.00000000000006" height="21"/>
                                 <accessibility key="accessibilityConfiguration" identifier="lblEnterPasswordID" label="lblEnterPasswordLbl"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lgg-qt-p3R">
-                                <rect key="frame" x="56" y="235" width="263" height="30"/>
+                                <rect key="frame" x="60" y="235" width="294" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="tfPassword2ID" label="tfPassword2Lbl"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiP-Td-zkY">
-                                <rect key="frame" x="164" y="295" width="47" height="30"/>
+                                <rect key="frame" x="183.66666666666666" y="295" width="47" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="btnSignInID" label="btnSignInLbl"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>

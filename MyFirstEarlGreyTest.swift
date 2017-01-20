@@ -13,55 +13,26 @@ typealias ElementInteraction = GREYElementInteraction
 
 class MyFirstEarlGreyTest: XCTestCase {
     
-    let tfAccount: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfAccountID"))
-    let btnNext: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnNextID"))
-    let btnBackPasswordVC: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_allOfMatchers([grey_accessibilityLabel("Back"), grey_accessibilityTrait(UIAccessibilityTraitButton)]))
-    let lblSignIn: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblSignInID"))
-    let btnCreateAccount: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnCreateAccountID"))
-    
-    // For SignUpViewController
-    let tfUserName: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfUserNameID"))
-    let tfPassword: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfPasswordID"))
-    let lblCreateAccount: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblCreateAccountID"))
-    let btnSignUp: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnSignUpID"))
-    
-    // PasswordViewController
-    let btnSignIn: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnSignInID"))
-    let lblEnterPassword: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblEnterPasswordID"))
-    let tfPassword2: ElementInteraction = EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfPassword2ID"))
-    
-    func testBasicSelectionAndAction() {
-        EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnNextID")).perform(grey_tap())
-        btnBackPasswordVC.perform(grey_tap())
-    }
-    
-    func testBasicSelectionActionAssert() {
-        tfAccount.perform(grey_typeText("1234567890")).assert(with: grey_text("1234567890"))
-        lblSignIn.perform(grey_tap())
-        btnNext.assert(with: grey_sufficientlyVisible())
-        btnNext.perform(grey_tap()).assert(with: grey_notVisible())
-        btnBackPasswordVC.perform(grey_tap())
-    }
-    
     func testCreateAccount() {
         // Create account
-        btnCreateAccount.perform(grey_tap())
-        tfUserName.perform(grey_typeText("anhph5")).assert(with: grey_text("anhph5"))
-        lblCreateAccount.perform(grey_tap())
-        tfPassword.perform(grey_typeText("1234567890")).assert(with: grey_text("1234567890"))
-        lblCreateAccount.perform(grey_tap())
-        btnSignUp.perform(grey_tap()).assert(with: grey_notVisible())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnCreateAccountID")).perform(grey_tap())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfUserNameSignUpID")).perform(grey_typeText("chihuahua")).assert(with: grey_text("chihuahua"))
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblCreateAccountID")).perform(grey_tap())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfPasswordID")).perform(grey_typeText("gaogaogao")).assert(with: grey_text("gaogaogao"))
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblCreateAccountID")).perform(grey_tap())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnSignUpID")).perform(grey_tap()).assert(with: grey_notVisible())
         
         // Enter account
-        tfAccount.perform(grey_typeText("anhph5")).assert(with: grey_text("anhph5"))
-        lblSignIn.perform(grey_tap())
-        btnNext.perform(grey_tap())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfAccountID")).perform(grey_typeText("chihuahua")).assert(with: grey_text("chihuahua"))
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblSignInID")).perform(grey_tap())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnNextID")).perform(grey_tap())
         
         // Enter password
-        tfPassword2.perform(grey_typeText("1234567890")).assert(with: grey_text("1234567890"))
-        lblEnterPassword.perform(grey_tap())
-        btnSignIn.perform(grey_tap())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("tfPassword2ID")).perform(grey_typeText("gaogaogao")).assert(with: grey_text("gaogaogao"))
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("lblEnterPasswordID")).perform(grey_tap())
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("btnSignInID")).perform(grey_tap())
     }
+    
     
 }
 

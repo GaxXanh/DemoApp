@@ -8,20 +8,6 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "324E36361E2CD8F1007918E8"
-               BuildableName = "DemoApp.app"
-               BlueprintName = "DemoApp"
-               ReferencedContainer = "container:DemoApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
             buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
@@ -31,6 +17,20 @@
                BlueprintIdentifier = "320397101E2DF94B00039F22"
                BuildableName = "DemoAppTests.xctest"
                BlueprintName = "DemoAppTests"
+               ReferencedContainer = "container:DemoApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "324E36361E2CD8F1007918E8"
+               BuildableName = "DemoApp.app"
+               BlueprintName = "DemoApp"
                ReferencedContainer = "container:DemoApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,25 +51,8 @@
                BlueprintName = "DemoAppTests"
                ReferencedContainer = "container:DemoApp.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "MyFirstEarlGreyTest/testBasicSelectionActionAssert()">
-               </Test>
-               <Test
-                  Identifier = "MyFirstEarlGreyTest/testBasicSelectionAndAction()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "324E36361E2CD8F1007918E8"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
-            ReferencedContainer = "container:DemoApp.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "DYLD_INSERT_LIBRARIES"
